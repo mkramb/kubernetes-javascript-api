@@ -1,4 +1,4 @@
-# kubernetes-client-javascript
+# kubernetes-javascript-api
 
 ## Development
 
