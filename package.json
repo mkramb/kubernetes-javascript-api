@@ -1,0 +1,25 @@
+{
+  "name": "kubernetes-javascript-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mkramb/kubernetes-javascript-api.git"
+  },
+  "scripts": {
+    "generate": "rimraf ./client ; swagger-codegen generate -l typescript-fetch -o ./client -i ./swagger.json",
+    "build": "rimraf ./dist ; tsc"
+  },
+  "author": "Mitja Kramberger <mitja.kramberger@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "rimraf": "^2.6.2",
+    "typescript": "^2.9.1"
+  },
+  "dependencies": {
+    "portable-fetch": "^3.0.0",
+    "url": "^0.11.0"
+  }
+}
